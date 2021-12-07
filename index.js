@@ -7,13 +7,13 @@ const cors = require('cors');
 
 app.use(cors());
 
+app.get('/', function(req, res) {
+    res.setHeader('Content-Type', 'text/html');
+    res.status(200).send('Salut !');
+});
+
 app.use('/api/', apiRouter);
 
 app.listen(port, () => {
     console.log('Server listening on port : ' + port)
-});
-
-app.get('/', function(req, res) {
-    res.setHeader('Content-Type', 'text/html');
-    res.status(200).send('Salut ! C\'est Marques Adrien !');
 });
