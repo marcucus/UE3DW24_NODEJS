@@ -8,6 +8,13 @@ module.exports = {
           })
     },
 
+    getUser: function (req, res) {
+        models.User.findByPk(req.params.id
+        ).then(function (user) {
+            res.status(201).json(user.id)
+        })
+    },
+
     createUser:function(req, res){
         models.User.create({
             firstname: req.body.firstname, lastname: req.body.lastname}

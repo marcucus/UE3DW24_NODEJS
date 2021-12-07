@@ -1,8 +1,9 @@
 <testExecutions version="1">
 <file path="tests/user.test.js">
-<testCase name="Test : Get all users responds with json" duration="156" />
-<testCase name="Test : create user responds with json" duration="33" />
-<testCase name="Test : delete user responds with json" duration="15" />
-<testCase name="Test : update user responds with json" duration="15" />
+<testCase name="Test : Get all users responds with json" duration="185" />
+<testCase name="Test : Get one users responds with json" duration="16" />
+<testCase name="Test : create user responds with json" duration="73" />
+<testCase name="Test : delete user responds with json" duration="13" />
+<testCase name="Test : update user responds with json" duration="18" />
 </file>
 </testExecutions>

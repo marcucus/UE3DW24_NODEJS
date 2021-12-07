@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT;
 const apiRouter = require('./routes/apiRouter').router;
+const cors = require('cors');
+
+app.use(cors());
 
 app.use('/api/', apiRouter);
 
