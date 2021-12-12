@@ -25,7 +25,7 @@ module.exports = {
 
     deleteUser:function(req, res){
         models.User.destroy({
-            where : {id: req.body.id}
+            where : {id: req.params.id}
         }
         ).then(function(user) {
             res.status(201).json(user)

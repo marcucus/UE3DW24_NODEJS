@@ -12,6 +12,9 @@ app.get('/', function(req, res) {
     res.status(200).send('Salut !');
 });
 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json()) // To parse the incoming requests with JSON payloads
+
 app.use('/api/', apiRouter);
 
 app.listen(port, () => {
